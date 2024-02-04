@@ -1,28 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myResume</title>
-
     <!-- add icon link -->
     <link rel="icon" href="img/profile.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
     <style>
-        .div1
+        #pic01
         {
-            width: 300px;
-            height: 100px;
-            border: 3px dashed #121294;
-            border-radius: 50px/15px;
-            padding: 25px;
+            border: #444444 solid 2px;
+            border-radius: 50%;
+            height: 20vh;
+        }
+        .bor01
+        {
+            font-weight: bold;
+        }
+        #back-to-top
+        {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
+
 <body>
-    <div class="div1">
-    <h2> 測試個人履歷 </h2>
-        <p> https://l065.github.io/  只要這樣即可連上</p>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">My Resume</li>
+<!--                <li><a href="#">One</a></li>-->
+<!--                <li><a href="#">Two</a></li>-->
+<!--                <li><a href="#">Three</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="callout large primary">
+        <div class="text-center">
+            <img id="pic01" src="img/picture01.png" title="林宥薷" alt="林宥薷的個人照片" aria-label="林宥薷的個人照片">
+            <h2>林宥薷-個人履歷</h2><br>
+            <h2 class="subheader" style="font-size: 0.9rem">靜宜大學食營系 營養保健組碩士 | 109年專技高考營養師及格</h2>
+        </div>
     </div>
 
+    <article class="grid-container">
+        <div class="grid-x align-center">
+            <div class="cell medium-8">
+                <div class="blog-post">
+                    <h3>個人專長</h3>
+                    <p style="text-decoration: underline 2px #9ce596; font-weight: bold">營養師:</p>
+                    <ul>
+                        <li>營養衛教、失智症保健、供膳及食品衛生安全管理指導 </li>
+                    </ul>
+                    <p style="text-decoration: underline 2px #9ce596; font-weight: bold">Java全端入門 (勞發署職前訓練班):</p>
+                    <ul>
+                        <li>程式設計:Java (開發框架:Spring Boot)</li>
+                        <li>網頁設計:HTML, CSS, JavaScript</li>
+                        <li>資料庫:MariaDB</li>
+                        <li>版本控制:Git</li>
+                        <li>開發軟體平台:Docker</li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="grid-container">
+            <div class="grid-x align-center">
+                <div class="cell medium-8">
+                    <div class="blog-post">
+                        <h3>工作經歷</h3>
+
+                        <p><strong>累積工作年資:</strong></p>
+                        <p>3年8個月</p>
+
+                        <div class="work-experience">
+                            <h4>大墩事業有限公司 行銷產品專員 <small>(2022/06~2023/10)</small> </h4>
+                            <p>工作說明:</p>
+                            <ol>
+                                <li>公司內部產品教育訓練</li>
+                                <li>業務對外使用資料撰寫</li>
+                                <li>外出支援對客戶做產品簡介</li>
+                                <li>產品營養標示計算</li>
+                                <li>電商平台活動處理</li>
+                                <li>Google Ads關鍵字廣告投放</li>
+                            </ol>
+                        </div>
+
+                        <div class="work-experience">
+                            <h4>光光盒餐_翔業餐飲有限公司 營養師 <small>(2021/08~2022/05)</small> </h4>
+                            <p>工作說明:</p>
+                            <ol>
+                                <li>廚房衛生管理</li>
+                                <li>開立當月菜單</li>
+                                <li>提供開發新產品之營養建議及計算營養成分</li>
+                                <li>公司社群營養專欄</li>
+                                <li>協助外送、支援分店人力</li>
+                                <li>消費者營養問題回覆</li>
+                            </ol>
+                        </div>
+
+                        <div class="work-experience">
+                            <h4>泳翔食品股份有限公司 團膳營養師 <small>(2020/10~2021/05)</small> </h4>
+                            <p>工作說明:</p>
+                            <ol>
+                                <li>規劃與監督學校所用營養食譜作業</li>
+                                <li>三章1Q申請相關作業</li>
+                                <li>食材登錄作業建檔</li>
+                                <li>參與營養教育與營養推廣方案</li>
+                                <li>製作招標企劃書及簡報</li>
+                            </ol>
+                        </div>
+
+                        <div>
+                            <h4>優生製藥廠股份有限公司 產線技術員 <small>(2018/10~2019/09)</small> </h4>
+                            <p>工作說明:</p>
+                            <ol>
+                                <li>膜衣機操作</li>
+                                <li>設備清潔維護</li>
+                            </ol>
+                        </div>
+
+                        <hr>
+                     </div>
+                </div>
+            </div>
+
+
+            <div class="grid-x align-center">
+                <div class="cell medium-8">
+                    <div class="blog-post">
+                        <h3>自傳</h3>
+                        <p>您好，我是林宥薷，2017 年畢業於靜宜大學食品營養學系營養與保健組碩士班；
+                            大二暑期實習於詹吟菁特聘教授之營養生理研究室，自覺有興趣而繼續攻讀碩士，
+                            至今具有動物實驗、蛋白質體學等相關生化及分生實驗經驗。畢業後當兵一年，於 2018/08 兵役已期滿退伍。
+                            家庭狀態為爸爸從事國際貿易、媽媽是家中家管，而弟弟則是一位生技業工程師。目前，我和我的妻子一同在外租屋生活，
+                            家庭成員們充分溝通，對於我將來轉換到長照機構有著理解與支持。在這樣的狀況下，我清楚地了解未來的工作可能涉及加班、輪休，甚至需要犧牲假日。
+                            這樣的工作安排，我感謝家人們的理解與體諒，讓我可以毫無後顧之憂地投入新的事業領域。有信心在貴公司發展，同時也保持家庭的穩固與和諧。
+                        </p>
+                        <p class="bor01">
+                            過往職場經歷：
+                        </p>
+                        <p>
+                            2018/10~2019/09 服務於優生製藥，職務為製程技術員膜衣錠組，負責
+                            使用鍋爐將膜衣錠包裹上膜衣之最後一步，達到避免藥品變質之效果。後
+                            來辭職是自己認為優生製藥雖然穩定，但升遷機會與薪資成長幅度頗不盡
+                            理想，故回去補習班讀書報考營養師國考一年，以充實自己；如期許於 109
+                            年第二次專技高考營養師考試及格。
+                        </p>
+                        <p>
+                            2020/10~2021/05 服務於泳翔食品，為專營學校團膳的公司，這是考到
+                            證照後第一份營養師的工作，基本的處理文書作業及菜單開立外，大量時
+                            間均在廚房幫忙廚工之工作，較少發揮到本職學能，故約莫半年即辭職。
+                        </p>
+                        <p>
+                            2021/08~2022/06 服務於翔業餐飲，為主要做外帶便當的小型餐飲公司，
+                            工作內容原為廚房衛生管理、ISO 表單謄寫、官網文案撰寫，但開始經歷
+                            疫情與拓展店面，而人手不夠，被指派至清境分店、南投中興新村擺攤和
+                            中科各大廠支援，逐漸無法掌握總店衛生管理情形，被衛生稽查後竟是我
+                            也有責任，遭作為不加薪的指標，故將階段性工作交接後離職。
+                        </p>
+                        <p>
+                            2022/06~2023/10 服務於大榮生技，公司主要做蛹蟲草生產與中草藥萃
+                            取，應徵工作原為以營養師身分當行銷部產品專員，和另一位營養師一起
+                            做定期業務產品教育訓練、業務需要資料撰寫、外出支援產品簡報等；但
+                            是於 2022/10 月後，行銷部二位電商人員均被資遣，相關業務便由我接手，
+                            以自身最大努力情況下，始終達不到主管之要求，最終以被資遣落幕。
+                        </p>
+                        <p class="bor01">
+                            工作規劃與未來期許：
+                        </p>
+                        <p>
+                            大多數人對我形容為悶騷、內向，自己也有自覺，所以大多自己默默地獨
+                            力完成各種實驗項目，不太讓他人插手，不過實驗室的大小事大多也攬在
+                            身上幫忙，忙忙碌碌地分工與團隊合作，不希望他人辛苦到，積極地累積
+                            能量將問題逐一迎刃而解。
+                            應徵貴公司本人雖談不上專業，且才疏學淺，但希望有機會能在此工作，
+                            並藉此將我的營養專業知識與程式技能相結合，佐以正面態度於工作上發
+                            揮最大效益，對於未來的職涯，我設定了一系列階段性目標：
+                        </p>
+                        <p>
+                            1. 短期目標:
+                            迅速熟悉貴公司的環境、申請核銷流程與便當配送業務，並具備獨立作業
+                            之能力。
+                        </p>
+                        <p>
+                            2. 中期目標:
+                            對於不管為外送客戶需求、主管交辦事項以及政府機關窗口能夠解決問題，
+                            具備自主完成相關文書工作的能力，提升工作表現。
+                        </p>
+                        <p>
+                            3. 長期目標: 持續學習相關業務知識，並培養能夠跨部門領導團隊的能力，
+                            提高整體運作效能。
+                        </p>
+                        <p>
+                            以上自傳，若有不夠詳盡之處，謹請見諒與海涵，感謝您撥冗閱讀此自傳，
+                            假如有興趣或賞識，希望給予晤談面試的機會，期待能夠與貴公司共同成
+                            長、共創價值。
+                        </p>
+                        <p class="bor01">
+                            求學經歷：
+                        </p>
+                        <p>
+                            2010-2011 開南大學保健營養學系 轉學
+                            2011-2014 靜宜大學食品營養學系營養系 學士畢
+                            2014-2017 靜宜大學食品營養學系營養與保健組 碩士畢
+                        </p>
+                        <p class="bor01">
+                            碩士論文：
+                        </p>
+                        <p>
+                            大花紅景天調控 Sirtuin-1 對老化促進小鼠學習記憶之影響
+                            Effects of Rhodiola Crenulata on Learning and Memory in SAMP8 Mice by
+                            Sirtuin-1 Mediation.
+                        </p>
+
+                        <p class="bor01">
+                            協助期刊論文：
+                        </p>
+                        <p>
+                            Liao JW， Hong LZ， Wang MF， Tsai SC， Lin YJ， Chan YC.
+                            Mutagenic safety and fatty liver improvement of nanonized black soybeans in
+                            senescence-accelerated prone-8 mice. J Food Sci. 2010;75:T82-90.
+                        </p>
+
+                        <p class="bor01">
+                            協助科技部計畫：
+                        </p>
+                            <p>
+                                紅景天延緩老化效應及相關分子機制之探討
+                            </p>
+                            <p>
+                                薑黃素對老化促進小白鼠免疫機能及老化現象之影響
+                            </p>
+                            <p>
+                                微奈米薑黃對老鼠神經功能及組織的影響
+                            </p>
+
+                        <p class="bor01">
+                            研討會發表紀錄：
+                        </p>
+                            <p>
+                            1. 台中榮總 105 年度與中區各大學院校合作研究計畫聯合成果發表會
+                            (論文題目：紅景天對非酒精性脂肪肝疾病及相關調控因子之影響)
+                            </p>
+                            <p>
+                            2. 台灣保健食品學會與台灣抗老化保健學會 2017 年會員大會暨老化健康
+                            照護國際研討會
+                            (論文題目：大花紅景天抑制老化促進小鼠細胞凋亡對長期記憶之影響)
+                            </p>
+                            <p>
+                            3. 2017 年會員大會暨保健食品與高齡代謝平衡國際研討會
+                            (論文題目：大花紅景天經自噬對老化促進小鼠短期記憶能力之影響)
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</article>
+    <a id="back-to-top" href="#">回到頂部</a>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+
+    <script>
+        // 滾動時顯示或隱藏按鈕
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // 點擊按鈕時回到頂部
+        document.getElementById("back-to-top").addEventListener("click", function () {
+            topFunction();
+        });
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
+
 </html>
